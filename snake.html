@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        tetris
+    </title>
+    <meta name="viewport" content="width=device-width, initail-scale=1.0">
+    <link href="style_snake.css" type="text/css" rel="stylesheet"/>
+
+</head>
+<body>
+    
+    <div class="header_">
+        <div class="site_logo" > <img src="content/images/shared/logo.png"> </div>
+        <div class="logo">
+            <img src="content/images/snake/snake_logo.png" class="game_logo">
+        </div>
+        <h1 class="g_title">Snake</h1>
+        <div class="navbar" id="menu_list">
+            <ul>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+            
+            </ul>
+            </div>
+            
+            </div>
+            
+    </div>
+   
+   
+    
+    <div class="mobile_menu" id="menu_bar"> <img src="content/images/shared/menu_icon.png" class="m_icon" onclick="toggleMenu()"> </div>
+    
+    <div class="content">
+       
+        <div class="project_descriptions">
+            <div class="screenshots">
+            <img src="content/images/snake/Title_screen.jpg" class="img1">
+            <img src="content/images/snake/menu_screen.jpg" class="img2">         
+            <img src="content/images/snake/game_play_screen.png" class="img3">
+            </div>
+            <div class="descriptions">
+            <p>
+            <h1>Snake</h1>
+             A simple snake clone made into a full featured game. <br/>
+             The project contains a title screen , menu screen ,a few confugurable options <br/>
+             via the settings screen, a 'save game' function and pause game screen as well a game over screen. <br/>
+             The game's level of difficulty changes as the player accumilates more points.
+             This is a fully independent project and not a tutorial clone.
+             
+             
+             <h4>Technologies</h4>
+             
+             The project is built on  the python programming language and the panda3d game engine.
+             <h4>Design and structure</h4>
+            The design is very simple but still makes use of object oriented programming concepts.<br/>
+            I favour encapsulation over inheritance. for the most part. <br/>
+
+            
+
+             <h4>Project code</h4>
+             The project can be found on github.
+             <a href="www.github/snake.com">Snake</a>
+
+
+            </p>
+            </div>
+            <p>
+             
+            </p>
+           
+        </div>
+       
+     
+    </div>
+   <div class='bottom'> </div>
+   <script>
+       
+    var menuList = document.getElementById("menu_list");
+    var menu_bar = document.getElementById("menu_bar");
+
+    menuList.style.maxHeight = "0px";
+    menuList.style.padding = "0px 0";
+    
+    function toggleMenu(){
+        if (menuList.style.maxHeight == "0px")
+        {
+            menuList.style.maxHeight = "142px";
+            menuList.style.padding = "15px 0";
+            menu_bar.style.background =" rgb(8, 52, 8) ";
+            
+
+        }
+        else
+        {
+            menuList.style.maxHeight = '0px';
+            menu_bar.style.background = "rgb(255, 255, 255)";
+            menuList.style.padding = "0px 0";
+            
+        }
+
+    }
+</script>
+</body>
+</html>

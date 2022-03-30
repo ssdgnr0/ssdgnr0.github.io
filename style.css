@@ -1,0 +1,311 @@
+*{
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+}
+.banner{
+width: 100%;
+height: 600px;
+background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(logo.png);
+background-size: cover;
+background-position: center;
+
+}
+.site_logo{
+        
+        position: absolute;
+        display: block;
+		top: 25px;
+        z-index: 3;
+		padding-left: 20px
+		
+        
+    }
+.site_logo img{
+       
+        display: block;
+        height: 100px;
+        margin-top: 3px;
+       
+    }
+.mobile_menu{
+	display: none;
+}
+.navbar{
+ width: 850;
+ margin: auto;
+ padding: 35px 0;
+ display: block;
+ align-items: center;
+ justify-content: space-between;
+ position: absolute;
+ top:60px;
+ right: 0;
+}
+
+.navbar ul li{
+list-style: none;
+display: inline-block;
+margin: 0 20px;
+position: relative;
+right: 40px;
+}
+
+.navbar ul li a{
+text-decoration: none;
+color: #fff;
+text-transform: uppercase;
+}
+
+.navbar ul li::after{
+content: '';
+height: 3px;
+width: 0;
+background: #009688;
+position: absolute;
+left: 0;
+bottom: -10px;
+transition: 0.25s;
+}
+.navbar ul li:hover::after{
+width: 100%;
+}
+
+
+
+
+span{
+background: #009688;
+height: 100%;
+width: 0;
+border-radius: 25px;
+position: absolute;
+left: 0;
+bottom: 0;
+z-index: -1;
+transition: 0.5s;
+}
+
+.projectslink{
+	height: 5%;
+	text-align: center;
+	text-align: bottom;
+	font-size: 210%;
+	padding: 1%;
+	
+	/*border: 1px solid #008822;*/
+	
+}
+
+.content{
+	padding-bottom: 30px;
+}
+.content a:hover {
+
+	
+	top: 35%;
+	left: 15%;
+	text-decoration: none;
+	font-size:350%;
+	color:white;
+	transition: 0.5s;
+}
+#ttris_projlink:hover{
+	top: 48px;
+
+}
+.p1prodisplay{
+	width: 70%;
+	position: relative;
+	height: 70%;
+	left: 15%;
+	margin: 0px;
+	/*background-color: #a259ea;*/
+	
+	display:inline-block;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* IE10+ */
+    background: linear-gradient(to bottom right, rgba(0,78,0,0.6),rgba(0,120,34,0.4)); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+
+}
+#ttrisimg{
+height: 36%;
+width: 120%;
+
+
+}
+ .projlinks{ 
+	position: absolute;
+	top: 45%;
+	left: 17%;
+	font-size: 20px;
+	font-style: italic;
+	color: #fff;
+	width: 70%;
+	height: 70%;
+	text-align: center;
+	
+	
+}
+
+#ttris_projlink{
+	position: absolute;
+	top: 39%;
+	
+}
+
+.project_img {
+	max-width: 100%;
+	max-height: 100%;
+	z-index: -1;
+	position: relative;
+	
+}
+
+.bottom{
+	height: 150px;
+	width: 100%;
+	background-color: rgb(53, 156, 53);
+	position: absolute;
+
+
+}
+
+@media only screen and (max-width: 700px){
+
+html, body {
+
+	height: 100%;
+
+}
+
+.banner {
+    
+    background-size: cover;
+    background-size: cover;
+    background-position: center;
+    height: 70px;
+    
+}
+.navbar{
+   
+	margin: 0 0;
+	 padding: 15px 0;
+	 display: block;
+	 left: 0px;
+	 width: 100%;
+	 right: 0;
+	 top: 95px;
+	 z-index: 1;
+	 position: absolute;
+	 margin-top: 5px;
+	 margin-bottom: 10px;
+	 min-height: 0%;
+	 background: linear-gradient(rgb(80, 170, 80),rgb(226, 236, 226));
+	 
+	 }
+.site_logo{
+        
+        position: absolute;
+        display: block;
+        text-align: center;
+        z-index: 3;
+		top: 0;
+        
+    }
+.site_logo img{
+       
+	    
+        display: block;
+        height: 68px;
+        margin-top: 3px;
+       
+    }
+
+ .navbar ul li:hover::after{
+		 width: 0%;
+		 }
+ .navbar ul { 
+  text-align: right;
+ }
+ 
+  .navbar ul li{
+	   
+		 display: block;
+		 margin: 0 0px;
+		 right: 0px;
+		 padding-right: 8px;
+	 
+		 }
+ 
+ .navbar ul li a{
+		 
+		 color: #fff; 
+		 padding: 4 0px;
+		 
+			 }
+ .logo {
+	 
+		 float: none;
+		 height: 68px;
+		 width: auto;
+		 text-align: center;
+		 position: absolute;
+		 top: -95px;
+		 left: 0;
+		 margin-left: 4px;
+		 display: block;
+	
+ }
+ 
+ 
+ 
+ 
+ .mobile_menu {
+ 	 
+	 background-color:white;
+	 width: 100%;
+	 position: absolute;
+	 display: block;
+	 height: fit-content;
+  
+ }
+ .m_icon {
+ 
+	 float: right;
+	 height: 30px;
+	 right: 5%;
+	 width: 10%;
+   
+ }
+.projectslink {
+		
+		font-size: 146%;
+		position: relative;
+		top: 30px;
+	
+	}
+.content
+{
+	position: relative;
+	top: 35px;
+	min-height: 80%;
+	height: auto !important;
+	clear: both;
+	
+	
+}
+.bottom{
+	
+	position: relative;
+	height: 150px;
+	bottom: 0;
+	
+
+}	
+
+}

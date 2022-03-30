@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+SyStem DesiGNeR
+</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initail-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class='banner'>
+<div class="site_logo" > <img src="content/images/shared/logo.png"> </div>
+<div class="navbar" id="menu_list">
+<ul>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="contacts.html">Contacts</a></li>
+
+</ul>
+</div>
+
+</div>
+
+<div class="mobile_menu" id="menu_bar"> <img src="content/images/shared/menu_icon.png" class="m_icon" onclick="toggleMenu()"> </div>
+<div class="projectslink">
+<a href="projects.html">Projects</a>
+</div>
+<div class="content">
+<div class='p1prodisplay'> <img src="content\images\ndxp\ball_game_ndx.jpg" class='project_img'>
+  <a href="ball_game.html"  class="projlinks">Ball Game</a></div>
+<div class='p1prodisplay'>  <img src="content\images\ndxp\snake_ndx.png" class='project_img'>
+   <a href="snake.html" class="projlinks">Snake</a> </div>
+<div class='p1prodisplay'> <img src="content\images\ndxp\tetris_ndx.jpg" class='project_img' id="ttrisimg"> 
+ <a href="tetris.html" class="projlinks" id='ttris_projlink'>Tetris</a></div>
+</div>
+
+<div class='bottom'> </div>
+<script>
+       
+  var menuList = document.getElementById("menu_list");
+  var menu_bar = document.getElementById("menu_bar");
+  var x = window.matchMedia("(max-width: 700px)");
+  
+  menuList.style.maxHeight = "0px";
+  menuList.style.padding = "0px 0";
+  if (x.matches)
+  {
+   menuList.style.display = "none";
+  }
+  
+  function toggleMenu(){
+      if (menuList.style.maxHeight == "0px")
+      {
+          menuList.style.maxHeight = "142px";
+          menuList.style.padding = "15px 0";
+          menu_bar.style.background =" rgb(8, 52, 8) ";
+          menuList.style.display = "block";
+          
+
+      }
+      else
+      {
+         menuList.style.display = "none";
+          menuList.style.maxHeight = '0px';
+          menu_bar.style.background = "rgb(255, 255, 255)";
+          menuList.style.padding = "0px 0";
+		 
+          
+      }
+      
+      
+  }
+</script>
+
+</body>
+</html>

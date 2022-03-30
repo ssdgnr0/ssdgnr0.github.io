@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        tetris
+    </title>
+    <meta name="viewport" content="width=device-width, initail-scale=1.0">
+    <link href="style_tetris.css" type="text/css" rel="stylesheet"/>
+    
+</head>
+<body>
+
+ <div class="header_">
+         <div class="site_logo" > <img src="content/images/shared/logo.png"> </div>
+        <div class="logo">
+            <img src="content/images/tetris/tetris_logo.png" class="game_logo">
+        </div>
+        <h1 class="g_title">Tetris</h1>
+        <div class="navbar" id="menu_list">
+            <ul>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+            
+            </ul>
+            </div>
+            
+            </div>
+            
+    </div>
+   
+   
+
+    
+    <div class="mobile_menu" id="menu_bar"> <img src="content/images/shared/menu_icon.png" class="m_icon" onclick="toggleMenu()"> </div>
+    <div class="content">
+       
+        <div class="poject_descriptions">
+            <div class="screenshots">
+            <img src="content/images/tetris/TitleScreen.png" class="img1">           
+            <img src="content/images/tetris/game_play_screen.png" class="img2">
+            <img src="content/images/tetris/game_paused_screen.png" class="img3">       
+            </div>
+            <div class="descriptions">
+            <p>
+            <h1>Tetris</h1>
+             A simple tetris clone made into a full featured game. <br/>
+             The project contains a title screen , menu screen ,a few confugurable options <br/>
+             via the settings screen, a 'save game' function and pause game screen as well a game over screen. <br/>
+             A media player also exits so the player can listern to some music while stacking some tetriminos.  <br/>
+             This is a fully independent project and not a tutorial clone.
+            </p>
+             
+             <h4>Technologies</h4>
+             <p>
+             The project is built on  the python programming language and the panda3d game engine.
+            </p>
+             <h4>Design and structure</h4>
+             <p>
+             Most tetris games store a set of precalculated rotation positions. <br/>
+             I opted to calculate the rotations on the fly. using a 2d matrix of some sort.
+             Classes are the conerstone of the design. the code does however favour encapsulation over inheritace.
+            </p>
+             <h4>Project code</h4>
+             <p>
+             The project can be found on github.
+             <a href="www.github/tetris.com">Tetris</a>
+
+
+            </p>
+            </div>
+            <p>
+             
+            </p>
+           
+        </div>
+       
+     
+    </div>
+   <div class='bottom'> </div>
+
+   <script>
+       
+    var menuList = document.getElementById("menu_list");
+    var menu_bar = document.getElementById("menu_bar");
+
+    menuList.style.maxHeight = "0px";
+    menuList.style.padding = "0px 0";
+    
+    function toggleMenu(){
+        if (menuList.style.maxHeight == "0px")
+        {
+            menuList.style.maxHeight = "142px";
+            menuList.style.padding = "15px 0";
+            menu_bar.style.background =" rgb(8, 52, 8) ";
+            
+
+        }
+        else
+        {
+            menuList.style.maxHeight = '0px';
+            menu_bar.style.background = "rgb(255, 255, 255)";
+            menuList.style.padding = "0px 0";
+            
+        }
+
+    }
+</script>
+</body>
+</html>

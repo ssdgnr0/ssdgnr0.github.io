@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    }
+
+html, body{
+    margin: 0 0;
+    height: 100%;
+    width: 100%;
+}
+.container{
+    
+    width: 100%;
+	min-height: 100%;
+	height: auto !important;
+	
+}
+.page{
+
+    width: 100%;
+	height:100%;
+    padding-bottom: 12%;
+    
+	
+}
+.projects{
+	
+	width: 100%;
+    padding: 0 0;
+    height: 100%;
+
+    
+}
+.navbar{
+ position: absolute;
+ right: 0;
+ top: 30px;
+ 
+}
+.navbar ul li{
+	
+list-style: none;
+display: inline-block;
+margin: 0 20px;
+position: relative;
+
+
+}
+
+.navbar ul li a{
+text-decoration: none;
+color: #000;
+text-transform: uppercase;
+}
+
+.navbar ul li::after{
+content: '';
+height: 3px;
+width: 0;
+background: #009688;
+position: absolute;
+left: 0;
+bottom: -10px;
+transition: 0.25s;
+}
+.navbar ul li:hover::after{
+width: 100%;
+}
+
+
+
+
+
+.background_img{
+    width: 100%;
+    opacity: 0.9;
+    position: relative;
+    z-index: -2;
+    top: 70px;
+	
+   
+}
+.content {
+   
+    list-style: none;
+    position: absolute;
+    top: 25%;
+    padding-left: 9%;
+    
+  
+}
+.content li {
+
+    padding-bottom: 29px;
+}
+.content li a{
+
+    font-size: 430%;
+    color: rgba(0, 0, 0, 0.864);
+    font-style: italic;
+   
+
+}
+.about{
+
+    position: absolute;
+    top: 10%;
+    text-align: center;
+    padding: 4%;
+    padding-top: 10%;
+   
+   
+  
+}
+.about h1{
+
+    font-size: 160%;
+    font-family: 'Arial Narrow';
+    color: rgb(170, 182, 93);
+    text-align: center;
+
+}
+.about p{
+
+ position: relative;
+ color: rgb(170, 182, 93);
+ font-size: 120%;
+ text-align: center;
+
+}
+.services{
+
+    position: absolute;
+    top: 10%;
+    text-align: left;
+    padding: 10%;
+   
+  
+}
+.services h1{
+
+    font-size: 160%;
+    font-family: 'Arial Narrow';
+    color: rgb(170, 182, 93);
+    text-align: left;
+
+}
+.services p{
+
+ position: relative;
+ color: rgb(170, 182, 93);
+ font-size: 170%;
+ text-align: left;
+
+}
+
+
+.bottom {
+
+    height: 100px;
+    background-color: rgb(53, 156, 53);
+    width: 100%;
+    position: relative;
+    bottom: 0;
+
+}
+
+
+
+@media only screen and (max-width: 1000px)
+
+{
+
+.container {
+
+    padding-bottom: 0%;
+}   
+.navbar{
+      position: absolute;
+      left: 0;
+      top: 15px;
+	  width: 100%;
+	  text-align: center;
+ 
+}
+.navbar ul li{
+	
+margin: 0 5px;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(8, 131, 74);
+    text-transform: uppercase;
+    font-size: 70%;
+}
+.navbar ul li:hover::after{
+width: 0%;
+}
+	
+.projects{
+	
+min-height: 100%;
+height: auto !important;
+padding-bottom: 12%;
+	
+}
+
+.background_img{
+	position: relative;
+    padding-bottom: 10%;
+    width: 100%;
+   
+   
+   
+}
+.content {
+
+    list-style: none;
+    position: absolute;
+    padding-left: 9%;
+	height: 60%;
+    top: 11%;
+	padding-bottom: 20px;
+  
+}
+	.content li a{
+
+    font-size: 140%;
+    color: rgba(0, 0, 0, 0.864);
+    font-style: italic;
+	font-family: arial;
+
+}
+.page{
+    min-height: 200px;
+    height: 100%;
+}
+
+.about {
+
+    position: relative;
+    padding-top: 15%;
+   
+    
+}
+.about h1{
+     position: relative;
+}
+.about p{
+    position: relative;
+}
+.services {
+
+    position: relative;
+    padding-top: 15%;
+    
+    
+}
+.services h1{
+     position: relative;
+}
+.services p{
+    position: relative;
+
+}
+#contacts{
+
+   
+    overflow-x: scroll;
+    padding: 0%;
+    margin: 0%;
+
+}
+.bottom {
+
+    height: 100px;
+    background-color: rgb(53, 156, 53);
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    
+
+}
+}
+@media only screen and (max-width: 300px){
+
+.content {
+
+        top: 10%;
+      
+    }
+
+.content li a{
+
+    font-size: 100%;
+ 
+}
+
+
+}
